@@ -1,0 +1,169 @@
+/* ============================
+   MOBILE (ex: iPhone até 480px)
+   ============================ */
+@media (max-width: 480px) {
+  /* Evitar rolagem lateral */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* ====== TOPBAR / HEADER ====== */
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .topbar .title {
+    font-size: 20px;
+  }
+
+  .topbar .logo {
+    text-decoration: none;
+  }
+
+  .icon,
+  .icon2 img {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* empurrar o conteúdo pra baixo da topbar fixa */
+  .carousels,
+  .sec-title,
+  #lista-produtos,
+  #carrinho-container,
+  .vibe,
+  .title1,
+  .fav {
+    margin-top: 72px;
+  }
+
+  /* ====== HOME: CARROSSEL ====== */
+  .carousels {
+    display: flex;
+    flex-direction: column;   /* um embaixo do outro no celular */
+    gap: 16px;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel .prev,
+  .carousel .next {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .vibe {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 12px 24px;
+  }
+
+  .title1,
+  .sec-title,
+  .fav {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* ====== LISTAGEM DE PRODUTOS (todos / earcuff) ====== */
+  #lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 colunas no celular */
+    gap: 12px;
+    padding: 0 12px 24px;
+  }
+
+  /* qualquer card que estiver dentro da lista fica fluido */
+  #lista-produtos > * {
+    width: 100%;
+  }
+
+  /* ====== PÁGINA DO CARRINHO ====== */
+  #carrinho-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 72px auto 16px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .item-carrinho {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .img-carrinho {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .carrinho-info h3 {
+    font-size: 14px;
+    margin: 0 0 4px;
+  }
+
+  .carrinho-info p {
+    font-size: 13px;
+    margin: 0 0 6px;
+  }
+
+  .botoes-quantidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .botoes-quantidade button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .qtd-display {
+    min-width: 20px;
+    text-align: center;
+  }
+
+  #total {
+    font-size: 14px;
+  }
+
+  #finalizar,
+  #removerTodos,
+  #explorar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+}
