@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "styles/estilo.css">
+    <script src="script.js" defer></script>
+     <script src="carrinho.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+  <div class="topbar">
+    <!-- menu hambúrguer -->
+    <div class="menu-wrapper">
+        <a href="#" id="sandu" class="icon2">
+            <img src="IMG/sandu.png" alt="Menu">
+        </a>
+
+        <div id="menu-modal" class="menu-modal">
+            <ul>
+                <li><a href="todos.html">Shop ALL</a></li>
+                <li><a href="brinco.html">Earrings</a></li>
+                <li><a href="earcuff.html">Earcuffs</a></li>
+                <li><a href="anel.html">Rings</a></li>
+                <li><a href="colar.html">Necklaces</a></li>
+                <li><a href="sobre.html">About us</a></li>
+                <li><a href="politica.html">Politicas e Termos</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- logo STACKD -->
+    <a class="logo" href="index.html">
+        <p class="title">STACKD</p>
+    </a>
+
+    <!-- carrinho -->
+    <a href="carrinho.html">
+        <img class="icon" src="IMG/carrinho.png" alt="carrinho"/>
+    </a>
+</div>
+  <div id="carrinho-container">
+    <h1 class="fav">Seu Carrinho</h1>
+    <div id="listaCarrinho"></div>
+
+    <button id="removerTodos">Remover Tudo</button>
+
+    <!-- Botão explorar NO LOCAL CORRETO -->
+    <button id="explorar" style="display:none;">Explorar</button>
+</div>
+
+<div id="carrinho-container">
+    <h1 class="fav">Resumo da Compra</h1>
+    <div class="total-container">
+      <p id="total" class="texto"></p>
+    </div>
+    <p class="texto">Forma de pagamento:</p>
+    <button id="finalizar">Finalizar Compra</button>
+</div>
+
+</body>
+</html>

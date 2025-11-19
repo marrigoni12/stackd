@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "categoria": "earcuff",
+      "nome": "Earcuff Lora cravejado",
+      "preco": 10000,
+      "prazo": "entrega em ate 5 dias uteis",
+      "descricao": "Earcuff de outro com  brilhante totalizando 0.6ct",
+      "imagem1": "IMG/earcuffCra1.png",
+      "imagem2":"IMG/earcuffCra2.png"
+    },
+     {
+      "id": 2,
+      "categoria": "earcuff",
+      "nome": "Earcuff Lora brilhante",
+      "preco": 10000,
+      "prazo": "entrega em ate 5 dias uteis",
+      "descricao": "Earcuff de outro com diamante de 0.7ct",
+      "imagem1": "IMG/earcuffbri1.png",
+      "imagem2":"IMG/earcuffbri2.png"
+    },
+     {
+      "id": 3,
+      "categoria": "earcuff",
+      "nome": "Earcuff Lora ",
+      "preco": 7000,
+      "prazo": "entrega em ate 5 dias uteis",
+      "descricao": "Earcuff de outro",
+      "imagem1": "IMG/earcuffsimple.png",
+      "imagem2":"IMG/earcuffsimple.png"
+    },
+     {
+      "id": 4,
+      "categoria": "earcuff",
+      "nome": "Earcuff Ella brilhante",
+      "preco": 8000,
+      "prazo": "entrega em ate 5 dias uteis",
+      "descricao": "Earcuff de outro com diamante de 0.7ct",
+      "imagem1": "IMG/piercingella2.png",
+      "imagem2":"IMG/piercingella.png"
+    }
+  ]
+}
